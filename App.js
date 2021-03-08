@@ -1,11 +1,14 @@
 import React, { Component } from 'react'
-import { Image, Text, TextInput, View, StyleSheet } from 'react-native'
+import { Image, Text, TextInput, View, StyleSheet, ScrollView } from 'react-native'
 import macbook_pro from './macbook_pro.jpg'
 
 const App = () => {
   return(
     <View>
+      <ScrollView>
+      <SampleComponent/>
       <StylingReactNativeComponent/>
+      </ScrollView>
     </View>
   )
 }
@@ -50,7 +53,7 @@ const StylingReactNativeComponent = () => {
             color: '#f2994a',
             marginTop: 12
           }}>
-          Rp. 25.000
+          Rp. 25.000.000
         </Text>
         <Text
           style={{
